@@ -13,7 +13,7 @@ After customizing your preferences, click the "Generate Sankey Diagram" button t
 You can explore the generated Sankey diagram by interacting with it. Hover over nodes and links to view additional information. You can also save the diagram as an image if needed.
 
 This version of the application is based on the visualization of proactive maintenance design choices. Find one example visualization below.
-![Proactive Maintenance Design Choices](image.png)
+![newplot (4)](https://github.com/H2020-InnoCyPES-ITN/Sankey-Scoping-Review/assets/101191232/9189a179-c411-4e04-a90c-db44bfec73d8)
 
 
 # Getting started
