@@ -18,41 +18,8 @@ This version of the application is based on the visualization of proactive maint
 
 # Getting started
 
-You have three options for running the Sankey App Visualization:
 
-### Option 1: Run the Build Application (Windows)
-
-1. **Download the Build**: If you are using Windows, you can download the pre-built executable file (`sankey_app.exe`) from the [GitHub Releases](https://github.com/your-app-repo/releases) section of this project.
-
-2. **Run the Executable**: Simply double-click the `sankey_app.exe` file to launch the Sankey App Visualization. This option does not require you to install any Python packages manually.
-
-### Option 2: Run the Bash Script (Linux/macOS)
-
-1. **Clone the Repository**: Clone this repository to your local machine.
-
-   ```python
-   git clone https://github.com/your-app-repo.git
-   ```
-
-2. **Navigate to the Repository**: Change your current directory to the cloned repository.
-
-   ```
-   cd sankey-app
-   ```
-
-3. **Run the Bash Script**: Execute the provided Bash script to automatically install the required Python packages and create a virtual environment. This script will create a virtual environment named `venv` and install the necessary packages.
-   ```
-   ./setup.sh
-   ```
-
-
-4. **Run the Application**: Start the Sankey App Visualization by running the following command:
-   ```
-   source venv/bin/activate
-   python sankey_app.py
-   ```
-
-### Option 3: Manual Installation (Windows/Linux/macOS)
+### Manual Installation (Windows/Linux/macOS)
 
 1. **Clone the Repository**: Clone this repository to your local machine.
    
