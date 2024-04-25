@@ -1,0 +1,418 @@
+INFO:werkzeug: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 12:38:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 12:38:29] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:10] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:10] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:19] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:19] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:22] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:22] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:29] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:29] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:48] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:49] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:50] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:52] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:53] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:18:53] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:22:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:22:33] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:22:45] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Aug/2023 13:22:45] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2023 13:34:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2023 13:34:18] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2023 13:34:18] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://localhost:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2023 13:42:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2023 13:42:12] "GET /static/css/styles.css HTTP/1.1" 304 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 2073, in wsgi_app
+  File "flask\app.py", line 1518, in full_dispatch_request
+  File "flask\app.py", line 1516, in full_dispatch_request
+  File "flask\app.py", line 1502, in dispatch_request
+  File "app.py", line 197, in index
+    return render_template('index.html', columns=data_org.columns.tolist(), selected_values=selected_values, filters = filters, selected_filters=selected_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "flask\templating.py", line 148, in render_template
+  File "jinja2\environment.py", line 1068, in get_or_select_template
+  File "jinja2\environment.py", line 997, in get_template
+  File "jinja2\environment.py", line 958, in _load_template
+  File "jinja2\loaders.py", line 125, in load
+  File "flask\templating.py", line 59, in get_source
+  File "flask\templating.py", line 95, in _get_source_fast
+jinja2.exceptions.TemplateNotFound: index.html
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 197, in index
+    return render_template('templates/index.html', columns=data_org.columns.tolist(), selected_values=selected_values, filters = filters, selected_filters=selected_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/index.html
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 197, in index
+    return render_template('templates/index.html', columns=data_org.columns.tolist(), selected_values=selected_values, filters = filters, selected_filters=selected_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: templates/index.html
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 2073, in wsgi_app
+  File "flask\app.py", line 1518, in full_dispatch_request
+  File "flask\app.py", line 1516, in full_dispatch_request
+  File "flask\app.py", line 1502, in dispatch_request
+  File "app.py", line 197, in index
+    return render_template('templates/index.html', columns=data_org.columns.tolist(), selected_values=selected_values, filters = filters, selected_filters=selected_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "flask\templating.py", line 148, in render_template
+  File "jinja2\environment.py", line 1068, in get_or_select_template
+  File "jinja2\environment.py", line 997, in get_template
+  File "jinja2\environment.py", line 958, in _load_template
+  File "jinja2\loaders.py", line 125, in load
+  File "flask\templating.py", line 59, in get_source
+  File "flask\templating.py", line 95, in _get_source_fast
+jinja2.exceptions.TemplateNotFound: templates/index.html
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 211, in index
+    return render_template('index.html', columns=data_org.columns.tolist(), selected_values=selected_values, filters = filters, selected_filters=selected_filters,  table_div = data[["Number", "Title"]].to_html())
+                                                                                                                                                                                ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 209, in index
+    return render_template('index.html', plot_div=plot_div, columns=data_org.columns.tolist(), path = path, selected_values=selected_values, color_setter= color_setter, filters = filters, selected_filters=selected_filters, table_div = data[["Number", "Title"]].to_html())
+                                                                                                                                                                                                                                           ~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\indexes\base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\indexes\base.py", line 6133, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Number'] not in index"
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 197, in index
+    sankey_data = go.Sankey(node = node, link = new_links)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\plotly\graph_objs\_sankey.py", line 1353, in __init__
+    self["node"] = _v
+    ~~~~^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\plotly\basedatatypes.py", line 4865, in __setitem__
+    self._set_compound_prop(prop, value)
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\plotly\basedatatypes.py", line 5276, in _set_compound_prop
+    val = validator.validate_coerce(val, skip_invalid=self._skip_invalid)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\_plotly_utils\basevalidators.py", line 2475, in validate_coerce
+    v = self.data_class(v, skip_invalid=skip_invalid, _validate=_validate)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\plotly\graph_objs\sankey\_node.py", line 844, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\plotly\basedatatypes.py", line 4391, in _process_kwargs
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.sankey.Node: 'font'
+
+Did you mean "line"?
+
+    Valid properties:
+        color
+            Sets the `node` color. It can be a single value, or an
+            array for specifying color for each `node`. If
+            `node.color` is omitted, then the default `Plotly`
+            color palette will be cycled through to have a variety
+            of colors. These defaults are not fully opaque, to
+            allow some visibility of what is beneath the node.
+        colorsrc
+            Sets the source reference on Chart Studio Cloud for
+            `color`.
+        customdata
+            Assigns extra data to each node.
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            `customdata`.
+        groups
+            Groups of nodes. Each group is defined by an array with
+            the indices of the nodes it contains. Multiple groups
+            can be specified.
+        hoverinfo
+            Determines which trace information appear when hovering
+            nodes. If `none` or `skip` are set, no information is
+            displayed upon hovering. But, if `none` is set, click
+            and hover events are still fired.
+        hoverlabel
+            :class:`plotly.graph_objects.sankey.node.Hoverlabel`
+            instance or dict with compatible properties
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}" as well as %{xother}, {%_xother},
+            {%_xother_}, {%xother_}. When showing info for several
+            points, "xother" will be added to those with different
+            x positions from the first point. An underscore before
+            or after "(x|y)other" will add a space on that side,
+            only when this field is shown. Numbers are formatted
+            using d3-format's syntax %{variable:d3-format}, for
+            example "Price: %{y:$.2f}".
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format
+            for details on the formatting syntax. Dates are
+            formatted using d3-time-format's syntax
+            %{variable|d3-time-format}, for example "Day:
+            %{2019-01-01|%A}". https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format for details on the
+            date formatting syntax. The variables available in
+            `hovertemplate` are the ones emitted as event data
+            described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Variables `sourceLinks` and
+            `targetLinks` are arrays of link objects.Finally, the
+            template string has access to variables `value` and
+            `label`. Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            `hovertemplate`.
+        label
+            The shown name of the node.
+        labelsrc
+            Sets the source reference on Chart Studio Cloud for
+            `label`.
+        line
+            :class:`plotly.graph_objects.sankey.node.Line` instance
+            or dict with compatible properties
+        pad
+            Sets the padding (in px) between the `nodes`.
+        thickness
+            Sets the thickness (in px) of the `nodes`.
+        x
+            The normalized horizontal position of the node.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for
+            `x`.
+        y
+            The normalized vertical position of the node.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for
+            `y`.
+        
+Did you mean "line"?
+
+Bad property path:
+font
+^^^^
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 211, in index
+    return render_template('index.html', plot_div=plot_div, columns=data_org.columns.tolist(), path = path, selected_values=selected_values, color_setter= color_setter, filters = filters, selected_filters=selected_filters, table_div = data[["Number", "Title"]].drop_duplicates().to_html(index=False))
+                                                                                                                                                                                                                                           ~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\indexes\base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\pandas\core\indexes\base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['Number', 'Title'], dtype='object')] are in the [columns]"
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 174, in index
+    links,labels = create_sankey_input_dict(data,path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 75, in create_sankey_input_dict
+    links['color'].append(color_link[j])
+                          ~~~~~~~~~~^^^
+IndexError: index 10830 is out of bounds for axis 0 with size 10000
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 174, in index
+    links,labels = create_sankey_input_dict(data,path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 75, in create_sankey_input_dict
+    links['color'].append(color_link[j])
+                          ~~~~~~~~~~^^^
+IndexError: index 10830 is out of bounds for axis 0 with size 10000
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 174, in index
+    links,labels = create_sankey_input_dict(data,path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 75, in create_sankey_input_dict
+    links['color'].append(color_link[j])
+                          ~~~~~~~~~~^^^
+IndexError: index 10830 is out of bounds for axis 0 with size 10000
+ERROR:app:Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\Anaconda3\envs\SankeyEnv\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 176, in index
+    links = recolor(data,path,copy.deepcopy(links),color_setter,None)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksu\OneDrive - Green Power Denmark\Skrivebord\Prototypes\00 Proactive maintenance design choices\Sankey_app\app.py", line 83, in recolor
+    keys = df[path[color_setter_idx]].drop_duplicates().to_list()
+              ~~~~^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proactive Maintenance Application Design Choices</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<header>
+    <h1>Proactive Maintenance Application Design Choices</h1>
+</header>
+<div id="sankey-container">
+    <!-- <h2>{{path}}</h2> -->
+    <form method="POST">
+        <div class="container">
+            <div class="column">
+                <label><h3>Sankey Path Elements</h3></label>
+                {% for i in range(5) %}
+                <select name="dropdown{{ i+1 }}">
+                    <option value="" {% if selected_values['dropdown' ~ (i+1)] == '' %}selected{% endif %}>Not selected</option>
+                    {% for column in columns %}
+                    {% if column != "Cite_key" and column != "Title" and column != "Component_original"%}
+                    <option value="{{ column }}" {% if selected_values['dropdown' ~ (i+1)] == column %}selected{% endif %}>
+                        {{ column }}
+                    {% endif %}
+                    </option>
+                    {% endfor %}
+                </select>
+                {% endfor %}
+            </div>
+            <div class="column">
+                <label><h3>Filters</h3></label>
+                {% for category, options in filters.items() %}
+                    <div class="filter-container">
+                        <label>{{ category }}</label>
+                        <select name="{{ category }}">
+                            <option value="" {% if selected_filters[category] == '' %}selected{% endif %}>Not selected</option>
+                            {% for option in options %}
+                            <option value="{{ option }}" {% if selected_filters[category] == option %}selected{% endif %}>{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% endfor %}
+                
+            </div>
+            <div class="column">
+                <label><h3>Color Level</h3></label>
+                <select name="color_selector">
+                    {% for key, value in selected_values.items() %}
+                    {% if value != '' %}
+                    <option value="{{ loop.index - 1 }}" {% if color_setter == loop.index - 1 %}selected{% endif %}>{{ value }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <!-- Plotly chart will be inserted here -->
+    <div >
+        {{ plot_div|safe }}
+    </div>
+
+    <!-- Add another div that contains a data table for the plotly grpah-->
+    <!-- Add some nice style to the table -->
+    <div class="table_div">
+        {{ table_div|safe }}
+    </div>
+    
+</div>
+</body>
+</html>
